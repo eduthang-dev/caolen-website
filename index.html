@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cao Lên Việt Nam</title>
+<meta name="description" content="Công ty CP Cao Lên Việt Nam — đồng hành cùng ba mẹ giúp con phát triển chiều cao chuẩn khoa học, từ 1 đến 18 tuổi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --do:#D11412; --do-dam:#A50E0A; --vang:#F0D808; --vang-nhat:#FFF7B8;
+  --nen:#FFFFFF; --nen-phu:#FFF3F1; --muc:#241615; --nhat:#6B5654; --vien:#F1D9D5;
+  --bo:22px; --bong:0 10px 30px rgba(165,14,10,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--nen);color:var(--muc);font:16.5px/1.7 "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;padding-inline:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.khung{max-width:1120px;margin-inline:auto}
+h1,h2,h3{font-family:"Montserrat","Be Vietnam Pro",sans-serif;line-height:1.2;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.5rem,4.6vw,2.3rem);font-weight:800;text-transform:uppercase;letter-spacing:-.01em}
+h2 em{font-style:normal;color:var(--do)}
+p{margin:0}
+.moc{display:inline-flex;align-items:center;gap:10px;font:700 .78rem/1 "Montserrat",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--do)}
+.moc::before{content:"";width:26px;height:10px;background:repeating-linear-gradient(90deg,var(--do) 0 2px,transparent 2px 6px);border-bottom:2px solid var(--do)}
+.dau-muc{display:grid;gap:12px;margin-bottom:32px;max-width:720px}
+.dau-muc p{color:var(--nhat)}
+section{padding-block:clamp(48px,8vw,88px)}
+.nut{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:.85rem 1.5rem;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:transform .15s ease}
+.nut:hover{transform:translateY(-2px)}
+.nut:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--vang);outline-offset:3px}
+.nut-do{background:var(--do);color:#FFFFFF;box-shadow:0 6px 16px rgba(209,20,18,.28)}
+.nut-vang{background:var(--vang);color:var(--muc)}
+.nut-vien{border-color:var(--do);color:var(--do);background:#FFFFFF}
+.cho{border:2px dashed #E5A9A2;background:repeating-linear-gradient(135deg,#FFF8F7 0 10px,#FFF1EF 10px 20px);color:var(--do-dam);display:grid;place-items:center;text-align:center;font-size:.85rem;font-weight:600;padding:12px}
+.nhan-cho{display:inline-block;font-size:.72rem;font-weight:700;background:var(--vang);color:var(--muc);border-radius:6px;padding:.15rem .45rem;letter-spacing:.02em}
+
+/* Thanh đầu trang */
+.thanh{position:sticky;top:0;z-index:40;margin-inline:-16px;padding:8px 16px;background:#FFFFFF;box-shadow:0 2px 14px rgba(120,20,15,.10)}
+.thanh-trong{display:flex;align-items:center;gap:10px}
+.thuong-hieu{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;flex:1}
+.thuong-hieu img{width:46px;height:46px;border-radius:8px;flex:none}
+.thuong-hieu b{display:block;color:var(--do);font:700 clamp(.6rem,2.7vw,.92rem)/1.25 "Montserrat",sans-serif;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.thuong-hieu span{display:block;color:var(--do);font-weight:600;font-size:clamp(.66rem,2.9vw,.9rem);line-height:1.25}
+.menu{display:flex;gap:4px;align-items:center}
+.menu a{text-decoration:none;font-weight:600;font-size:.93rem;padding:.5rem .7rem;border-radius:999px}
+.menu a:hover{background:var(--nen-phu);color:var(--do)}
+.thanh .nut{padding:.6rem 1.1rem;font-size:.92rem;white-space:nowrap}
+.menu-dt{display:none;position:relative}
+.menu-dt summary{list-style:none;cursor:pointer;width:42px;height:42px;border-radius:12px;background:var(--nen-phu);display:grid;place-items:center}
+.menu-dt summary::-webkit-details-marker{display:none}
+.menu-dt summary i{width:18px;height:2px;background:var(--do);box-shadow:0 -6px 0 var(--do),0 6px 0 var(--do)}
+.menu-dt nav{position:absolute;right:0;top:50px;background:#FFFFFF;border-radius:16px;box-shadow:var(--bong);padding:8px;display:grid;min-width:230px}
+.menu-dt nav a{padding:.7rem .9rem;border-radius:10px;text-decoration:none;font-weight:600}
+.menu-dt nav a:hover{background:var(--nen-phu)}
+@media (max-width:980px){.menu,.thanh .nut-do{display:none}.menu-dt{display:block}}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,56px);align-items:center;padding-block:clamp(36px,6vw,72px) clamp(48px,7vw,80px)}
+.hero h1{font-size:clamp(2rem,6.4vw,3.6rem);font-weight:900;text-transform:uppercase;letter-spacing:-.02em}
+.hero h1 span{color:var(--do)}
+.hero .mo{font-size:clamp(1.02rem,2.6vw,1.2rem);color:var(--nhat);margin-block:18px 26px;max-width:52ch}
+.hang-nut{display:flex;flex-wrap:wrap;gap:12px}
+.cam-ket{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:.9rem;color:var(--nhat)}
+.cam-ket b{color:var(--muc)}
+.thuoc{position:relative;background:var(--do);border-radius:32px;padding:28px 24px 24px 84px;color:#FFFFFF;overflow:hidden;min-height:440px}
+.thuoc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:62px;background:
+  repeating-linear-gradient(180deg,rgba(255,255,255,.95) 0 2px,transparent 2px 12px) left top/22px 100% no-repeat,
+  repeating-linear-gradient(180deg,rgba(255,255,255,.95) 0 3px,transparent 3px 60px) left top/40px 100% no-repeat;
+  border-right:2px solid rgba(255,255,255,.35)}
+.thuoc h3{font-size:1.05rem;text-transform:uppercase;letter-spacing:.04em;margin-bottom:14px;color:var(--vang)}
+.chang{display:grid;gap:10px;position:relative}
+.chang div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 12px;align-items:baseline}
+.chang b{font:800 1.15rem/1 "Montserrat",sans-serif;color:var(--vang);grid-row:span 2;min-width:4.4ch}
+.chang strong{font-weight:700}
+.chang span{font-size:.88rem;opacity:.9}
+.huou{margin-top:12px;height:84px;border-radius:18px;font-size:.75rem;line-height:1.3;position:relative}
+@media (max-width:860px){.hero{grid-template-columns:1fr}.thuoc{min-height:0}}
+
+/* Giới thiệu */
+.gioi-thieu{background:var(--nen-phu);box-shadow:0 0 0 100vmax var(--nen-phu);clip-path:inset(0 -100vmax)}
+.gt-luoi{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(24px,5vw,56px);align-items:center}
+.gt-anh{aspect-ratio:4/5;border-radius:28px;max-width:100%}
+.gt-chu{display:grid;gap:16px}
+.gt-chu p{color:var(--nhat)}
+.tru{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:8px}
+.tru div{background:#FFFFFF;border-radius:18px;padding:16px 8px;text-align:center;box-shadow:var(--bong)}
+.tru b{display:block;font:800 clamp(.78rem,1.1vw,.92rem)/1.2 "Montserrat",sans-serif;color:var(--do);text-transform:uppercase}
+.tru span{font-size:.8rem;color:var(--nhat);line-height:1.4;display:block;margin-top:4px}
+@media (max-width:860px){.gt-luoi{grid-template-columns:1fr}.gt-anh{aspect-ratio:16/10}.tru{grid-template-columns:repeat(2,1fr)}}
+
+/* Dịch vụ & giải pháp */
+.dv-luoi{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.the{border:1px solid var(--vien);border-radius:var(--bo);padding:22px;display:grid;grid-template-rows:auto auto 1fr auto;gap:10px;text-decoration:none;background:#FFFFFF;transition:transform .15s ease,box-shadow .15s ease}
+.the:hover{transform:translateY(-3px);box-shadow:var(--bong)}
+.the .so{font:800 .8rem/1 "Montserrat",sans-serif;color:var(--do);letter-spacing:.08em}
+.the h3{font-size:1.12rem;font-weight:800}
+.the p{color:var(--nhat);font-size:.93rem}
+.the .xem{font-weight:700;color:var(--do);font-size:.9rem}
+.the.noi{background:var(--do);border-color:var(--do);color:#FFFFFF}
+.the.noi p{color:rgba(255,255,255,.88)} .the.noi .so,.the.noi .xem{color:var(--vang)}
+.giai-phap{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.giai-phap a{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:16px;background:var(--nen-phu);text-decoration:none;font-weight:700}
+.giai-phap a i{flex:none;width:38px;height:38px;border-radius:12px;background:var(--vang);display:grid;place-items:center;font:800 .8rem/1 "Montserrat",sans-serif;font-style:normal;color:var(--muc)}
+@media (max-width:980px){.dv-luoi{grid-template-columns:repeat(2,1fr)}.giai-phap{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.dv-luoi{grid-template-columns:1fr}.giai-phap{grid-template-columns:1fr}}
+
+/* Sản phẩm */
+.sp{background:var(--vang-nhat);box-shadow:0 0 0 100vmax var(--vang-nhat);clip-path:inset(0 -100vmax)}
+.sp-luoi{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.sp-the{background:#FFFFFF;border-radius:var(--bo);overflow:hidden;box-shadow:var(--bong);display:grid;grid-template-rows:auto 1fr}
+.sp-the .cho{aspect-ratio:1/1;border:0;border-bottom:2px dashed #E5A9A2}
+.sp-than{padding:18px;display:grid;gap:8px;align-content:start}
+.sp-than h3{font-size:1.05rem}
+.sp-than p{font-size:.9rem;color:var(--nhat)}
+.sp-than .nut{margin-top:6px;justify-self:start;padding:.6rem 1.1rem;font-size:.9rem}
+.luu-y{margin-top:22px;font-size:.84rem;color:var(--nhat);max-width:80ch}
+@media (max-width:860px){.sp-luoi{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.sp-luoi{grid-template-columns:1fr}.sp-the .cho{aspect-ratio:4/3}}
+
+/* Câu chuyện */
+.cc-luoi{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cc{border-radius:var(--bo);background:var(--nen-phu);padding:22px;display:grid;gap:14px;align-content:start}
+.cc-dau{display:flex;align-items:center;gap:12px}
+.cc-dau .cho{width:52px;height:52px;border-radius:50%;padding:0;font-size:.6rem}
+.cc-dau b{display:block;font-weight:700}
+.cc-dau span{font-size:.82rem;color:var(--nhat)}
+.cc-so{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;background:#FFFFFF;border-radius:14px;padding:12px}
+.cc-so div{text-align:center}
+.cc-so small{display:block;font-size:.72rem;color:var(--nhat);text-transform:uppercase;letter-spacing:.06em}
+.cc-so strong{font:800 1.25rem/1.2 "Montserrat",sans-serif;color:var(--do);font-variant-numeric:tabular-nums}
+.cc-so i{font-style:normal;color:var(--do);font-weight:800}
+.cc blockquote{margin:0;color:var(--nhat);font-size:.93rem}
+@media (max-width:860px){.cc-luoi{grid-template-columns:1fr}}
+
+/* Tin tức */
+.tt-luoi{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}
+.tt-chinh,.tt-phu a{text-decoration:none}
+.tt-chinh{display:grid;gap:14px}
+.tt-chinh .cho{aspect-ratio:16/9;border-radius:var(--bo)}
+.tt-chinh h3{font-size:clamp(1.15rem,3vw,1.45rem)}
+.tt-chinh p{color:var(--nhat)}
+.nhom-tin{font:700 .74rem/1 "Montserrat",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--do)}
+.tt-phu{display:grid;gap:12px;align-content:start}
+.tt-phu a{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;padding:10px;border-radius:18px;border:1px solid var(--vien)}
+.tt-phu a:hover{background:var(--nen-phu)}
+.tt-phu .cho{aspect-ratio:1/1;border-radius:14px;font-size:.66rem;padding:6px}
+.tt-phu h3{font-size:.98rem;font-weight:700;margin-top:6px}
+.hoi-dap{margin-top:40px;display:grid;gap:10px}
+.hoi-dap details{border:1px solid var(--vien);border-radius:16px;padding:0 18px;background:#FFFFFF}
+.hoi-dap summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:14px}
+.hoi-dap summary::-webkit-details-marker{display:none}
+.hoi-dap summary::after{content:"+";color:var(--do);font:800 1.3rem/1 "Montserrat",sans-serif}
+.hoi-dap details[open] summary::after{content:"–"}
+.hoi-dap details p{padding-bottom:16px;color:var(--nhat)}
+@media (max-width:860px){.tt-luoi{grid-template-columns:1fr}}
+
+/* Đăng ký */
+.dang-ky{background:var(--do);color:#FFFFFF;border-radius:32px;padding:clamp(24px,5vw,56px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,48px);align-items:center;margin-block:clamp(40px,7vw,80px)}
+.dang-ky h2 em{color:var(--vang)}
+.dang-ky .moc{color:var(--vang)} .dang-ky .moc::before{background:repeating-linear-gradient(90deg,var(--vang) 0 2px,transparent 2px 6px);border-color:var(--vang)}
+.dang-ky p{opacity:.92}
+form{background:#FFFFFF;color:var(--muc);border-radius:24px;padding:22px;display:grid;gap:12px}
+label{font-size:.85rem;font-weight:600;display:grid;gap:6px}
+input,select{font:inherit;font-size:1rem;padding:.75rem .9rem;border:1.5px solid var(--vien);border-radius:12px;background:#FFFFFF;color:var(--muc);width:100%}
+.hai{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form .nut{width:100%;margin-top:4px}
+form small{color:var(--nhat);font-size:.78rem;text-align:center}
+@media (max-width:860px){.dang-ky{grid-template-columns:1fr}}
+
+/* Chân trang */
+footer{border-top:1px solid var(--vien);padding-block:40px 110px}
+.ft-luoi{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+.ft-luoi h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--do);margin-bottom:12px}
+.ft-luoi ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.93rem}
+.ft-luoi a{text-decoration:none}
+.ft-luoi a:hover{color:var(--do)}
+.ban-quyen{margin-top:28px;font-size:.8rem;color:var(--nhat)}
+@media (max-width:760px){.ft-luoi{grid-template-columns:1fr}}
+
+/* Nút nổi */
+.noi-lh{position:fixed;right:14px;bottom:14px;z-index:45;display:grid;gap:10px}
+.noi-lh a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font:800 .72rem/1 "Montserrat",sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.noi-lh .zl{background:#0068FF;color:#FFFFFF}
+.noi-lh .gl{background:var(--vang);color:var(--muc)}
+</style>
+</head>
+<body>
+
+<div class="thanh">
+  <div class="khung thanh-trong">
+    <a class="thuong-hieu" href="#">
+      <img src="anh/logo.jpg" alt="Logo Cao lên Việt Nam ơi">
+      <div><b>Công ty CP Cao Lên Việt Nam</b><span>Cao lên Việt Nam ơi!</span></div>
+    </a>
+    <nav class="menu" aria-label="Menu chính">
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#cau-chuyen">Câu chuyện</a>
+      <a href="#dich-vu">Dịch vụ</a>
+      <a href="#giai-phap">Giải pháp</a>
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="#tin-tuc">Tin tức</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+    <a class="nut nut-do" href="#dang-ky">Đăng ký tư vấn</a>
+    <details class="menu-dt">
+      <summary aria-label="Mở menu"><i></i></summary>
+      <nav aria-label="Menu điện thoại">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#cau-chuyen">Câu chuyện – Nhân vật</a>
+        <a href="#dich-vu">Dịch vụ</a>
+        <a href="#giai-phap">Giải pháp</a>
+        <a href="#san-pham">Sản phẩm</a>
+        <a href="#tin-tuc">Tin tức – Sự kiện</a>
+        <a href="#lien-he">Liên hệ</a>
+        <a href="#dang-ky" style="color:var(--do)">Đăng ký tư vấn</a>
+      </nav>
+    </details>
+  </div>
+</div>
+
+<main class="khung">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <p class="moc">Tăng chiều cao chuẩn khoa học</p>
+      <h1 style="margin-top:14px">Đồng hành cùng ba mẹ <span>giúp con cao lớn</span> từ 1 đến 18 tuổi</h1>
+      <p class="mo">Mỗi đứa trẻ có một tốc độ lớn riêng. Cao Lên Việt Nam đọc chiều cao của con bằng bảng dự báo phù hợp với người Đông Á, rồi cùng ba mẹ làm đúng 4 việc mỗi ngày: ăn, ngủ, vận động và giữ tinh thần vui.</p>
+      <div class="hang-nut">
+        <a class="nut nut-do" href="#dang-ky">Đăng ký tư vấn miễn phí</a>
+        <a class="nut nut-vien" href="https://zalo.me/0866767313">Chat Zalo với Dược sĩ</a>
+      </div>
+      <div class="cam-ket">
+        <span><b>Tư vấn 1–1</b> theo số đo thật</span>
+        <span><b>Lộ trình 3 tháng</b> đo và điều chỉnh</span>
+        <span><b>Không hứa</b> số cm vô căn cứ</span>
+      </div>
+    </div>
+
+    <aside class="thuoc" aria-label="Các giai đoạn vàng phát triển chiều cao">
+      <h3>Hành trình cao lớn của con</h3>
+      <div class="chang">
+        <div><b>1–3</b><strong>Nền móng</strong><span>Sữa, giấc ngủ dài, vận động tự do</span></div>
+        <div><b>4–9</b><strong>Tăng đều</strong><span>Mỗi năm đo lại, giữ con đúng làn phát triển</span></div>
+        <div><b>10–13</b><strong>Trước dậy thì</strong><span>Giữ cân nặng hợp lý, không để dậy thì sớm</span></div>
+        <div><b>13–18</b><strong>Bứt tốc</strong><span>Tận dụng những năm cuối trước khi sụn khép lại</span></div>
+      </div>
+      <div class="cho huou">Ảnh linh vật hươu Cao Lên · chờ bổ sung</div>
+    </aside>
+  </section>
+
+  <!-- GIỚI THIỆU -->
+  <section class="gioi-thieu" id="gioi-thieu">
+    <div class="khung gt-luoi">
+      <div class="cho gt-anh">Ảnh Dược sĩ Thắng cùng đội ngũ<br><span class="nhan-cho">Chờ bổ sung</span></div>
+      <div class="gt-chu">
+        <p class="moc">Về chúng tôi</p>
+        <h2>Công ty CP <em>Cao Lên Việt Nam</em></h2>
+        <p>Chúng tôi là đội ngũ dược sĩ, chuyên viên dinh dưỡng và tư vấn viên do Dược sĩ Thắng dẫn dắt, làm một việc duy nhất: giúp trẻ em Việt Nam đạt chiều cao tốt nhất trong khả năng của mình.</p>
+        <p>Mọi lời khuyên đều bắt đầu từ số đo thật của con: tuổi, chiều cao, cân nặng, dấu hiệu dậy thì và tốc độ lớn một năm qua. Không phỏng đoán, không hứa hẹn quá sức.</p>
+        <div class="tru">
+          <div><b>Dinh dưỡng</b><span>Đủ đạm, canxi, kẽm theo tuổi</span></div>
+          <div><b>Giấc ngủ</b><span>Tắt đèn trước 21h30</span></div>
+          <div><b>Vận động</b><span>Bật nhảy, ngoài trời mỗi ngày</span></div>
+          <div><b>Cảm xúc</b><span>Con vui, cả nhà cùng làm</span></div>
+        </div>
+        <div class="hang-nut" style="margin-top:6px"><a class="nut nut-vien" href="#">Tầm nhìn – Sứ mệnh – Giá trị cốt lõi</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DỊCH VỤ -->
+  <section id="dich-vu">
+    <div class="dau-muc">
+      <p class="moc">Dịch vụ</p>
+      <h2>Chọn cách <em>đồng hành</em> phù hợp với con</h2>
+      <p>Từ tài liệu miễn phí đến lộ trình cá nhân có người theo sát. Bấm vào từng mục để xem chi tiết.</p>
+    </div>
+    <div class="dv-luoi">
+      <a class="the" href="#"><span class="so">01</span><h3>Tư vấn chiều cao 1–1</h3><p>Dược sĩ đọc số đo của con trên bảng dự báo, chỉ ra con đang ở mức nào và việc cần làm ngay.</p><span class="xem">Xem chi tiết</span></a>
+      <a class="the noi" href="#"><span class="so">02</span><h3>Lộ trình cá nhân 3 tháng</h3><p>Phác đồ ăn – ngủ – vận động riêng cho con, đo mỗi tháng buổi sáng, đánh giá và điều chỉnh sau 3 tháng.</p><span class="xem">Xem chi tiết</span></a>
+      <a class="the" href="#"><span class="so">03</span><h3>Cộng đồng Cha Mẹ Tăng Chiều Cao</h3><p>Nhóm Zalo nơi ba mẹ hỏi đáp, nhận bài chia sẻ chuyên môn và thử thách thói quen cùng nhau.</p><span class="xem">Xem chi tiết</span></a>
+      <a class="the" href="#"><span class="so">04</span><h3>Cẩm nang &amp; thực đơn miễn phí</h3><p>Cẩm nang tăng chiều cao 1–18 tuổi và thực đơn 30 ngày gửi về email sau khi đăng ký.</p><span class="xem">Nhận tài liệu</span></a>
+    </div>
+
+    <div class="giai-phap" id="giai-phap">
+      <a href="#"><i>01</i>Giải pháp dinh dưỡng</a>
+      <a href="#"><i>02</i>Giải pháp giấc ngủ</a>
+      <a href="#"><i>03</i>Giải pháp vận động</a>
+      <a href="#"><i>04</i>Kiểm soát cân nặng</a>
+    </div>
+  </section>
+
+  <!-- SẢN PHẨM -->
+  <section class="sp" id="san-pham">
+    <div class="khung">
+      <div class="dau-muc">
+        <p class="moc">Sản phẩm nổi bật</p>
+        <h2>Sản phẩm <em>đang phân phối</em></h2>
+        <p>Website không bán trực tiếp. Ba mẹ bấm "Hỏi Dược sĩ" để được tư vấn đúng sản phẩm, đúng liều cho tuổi của con.</p>
+      </div>
+      <div class="sp-luoi">
+        <article class="sp-the"><div class="cho">Ảnh sản phẩm 1<br><span class="nhan-cho">Chờ bổ sung</span></div><div class="sp-than"><h3>Tên sản phẩm 1</h3><p>Công dụng chính, đối tượng dùng và quy cách đóng gói.</p><a class="nut nut-do" href="https://zalo.me/0866767313">Hỏi Dược sĩ qua Zalo</a></div></article>
+        <article class="sp-the"><div class="cho">Ảnh sản phẩm 2<br><span class="nhan-cho">Chờ bổ sung</span></div><div class="sp-than"><h3>Tên sản phẩm 2</h3><p>Công dụng chính, đối tượng dùng và quy cách đóng gói.</p><a class="nut nut-do" href="https://zalo.me/0866767313">Hỏi Dược sĩ qua Zalo</a></div></article>
+        <article class="sp-the"><div class="cho">Ảnh sản phẩm 3<br><span class="nhan-cho">Chờ bổ sung</span></div><div class="sp-than"><h3>Tên sản phẩm 3</h3><p>Công dụng chính, đối tượng dùng và quy cách đóng gói.</p><a class="nut nut-do" href="https://zalo.me/0866767313">Hỏi Dược sĩ qua Zalo</a></div></article>
+      </div>
+      <p class="luu-y">Thực phẩm bảo vệ sức khoẻ. Sản phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.</p>
+    </div>
+  </section>
+
+  <!-- CÂU CHUYỆN -->
+  <section id="cau-chuyen">
+    <div class="dau-muc">
+      <p class="moc">Người thật việc thật</p>
+      <h2>Câu chuyện <em>cao lớn</em> của các con</h2>
+      <p>Hành trình thật của các gia đình, có số đo trước và sau, được ba mẹ đồng ý chia sẻ.</p>
+    </div>
+    <div class="cc-luoi">
+      <article class="cc">
+        <div class="cc-dau"><div class="cho">Ảnh</div><div><b>Tên phụ huynh</b><span>Mẹ bé trai · Tỉnh/thành</span></div></div>
+        <div class="cc-so"><div><small>Bắt đầu</small><strong>— cm</strong></div><i>→</i><div><small>Sau 3 tháng</small><strong>— cm</strong></div></div>
+        <blockquote>Lời kể của phụ huynh về hành trình của con.</blockquote>
+        <span class="nhan-cho">Chờ câu chuyện thật đã xin phép</span>
+      </article>
+      <article class="cc">
+        <div class="cc-dau"><div class="cho">Ảnh</div><div><b>Tên phụ huynh</b><span>Mẹ bé gái · Tỉnh/thành</span></div></div>
+        <div class="cc-so"><div><small>Bắt đầu</small><strong>— cm</strong></div><i>→</i><div><small>Sau 3 tháng</small><strong>— cm</strong></div></div>
+        <blockquote>Lời kể của phụ huynh về hành trình của con.</blockquote>
+        <span class="nhan-cho">Chờ câu chuyện thật đã xin phép</span>
+      </article>
+      <article class="cc">
+        <div class="cc-dau"><div class="cho">Ảnh</div><div><b>Chuyên gia</b><span>Phỏng vấn · Lĩnh vực</span></div></div>
+        <div class="cc-so"><div><small>Chủ đề</small><strong>—</strong></div><i>·</i><div><small>Dạng</small><strong>Podcast</strong></div></div>
+        <blockquote>Lời khuyên từ chuyên gia, bài viết hoặc audio.</blockquote>
+        <span class="nhan-cho">Chờ bài phỏng vấn</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- TIN TỨC -->
+  <section id="tin-tuc" style="padding-top:0">
+    <div class="dau-muc">
+      <p class="moc">Tin tức – Sự kiện</p>
+      <h2>Kiến thức <em>từ chuyên gia</em></h2>
+    </div>
+    <div class="tt-luoi">
+      <a class="tt-chinh" href="#">
+        <div class="cho">Ảnh bài viết<br><span class="nhan-cho">Chờ bổ sung</span></div>
+        <span class="nhom-tin">Tin từ chuyên gia</span>
+        <h3>Một năm con cao thêm bao nhiêu cm là bình thường?</h3>
+        <p>Đừng lấy mấy tháng hè nhân ra cả năm. Cách đúng là đặt con vào cột phần trăm trên bảng dự báo, lấy hàng tuổi sau trừ hàng tuổi trước để biết mức tăng trung bình của con.</p>
+      </a>
+      <div class="tt-phu">
+        <a href="#"><div class="cho">Ảnh</div><div><span class="nhom-tin">Giấc ngủ</span><h3>Vì sao nên cho con tắt đèn trước 21h30?</h3></div></a>
+        <a href="#"><div class="cho">Ảnh</div><div><span class="nhom-tin">Dinh dưỡng</span><h3>3 thực phẩm tốt nhất để bổ sung kẽm cho con</h3></div></a>
+        <a href="#"><div class="cho">Ảnh</div><div><span class="nhom-tin">Cảnh báo</span><h3>3 dấu hiệu trẻ sắp ngừng phát triển chiều cao</h3></div></a>
+        <a href="#"><div class="cho">Ảnh</div><div><span class="nhom-tin">Sự kiện</span><h3>Hội thảo khoa học về chiều cao</h3></div></a>
+      </div>
+    </div>
+
+    <div class="hoi-dap">
+      <p class="moc" style="margin-bottom:6px">Hỏi đáp thường gặp</p>
+      <details><summary>Con tôi đang ở mức chiều cao nào so với các bạn?</summary><p>Ba mẹ gửi giới tính, ngày sinh, chiều cao và cân nặng của con. Dược sĩ đặt số đo vào bảng dự báo phù hợp với người Đông Á và cho biết con đang nằm giữa những mức phần trăm nào.</p></details>
+      <details><summary>Bao lâu thì thấy con cao lên?</summary><p>Đo chiều cao mỗi tháng vào buổi sáng, cùng một thước. Kết quả nên đánh giá sau 3 tháng, vì từng tháng lẻ dễ sai lệch.</p></details>
+      <details><summary>Con đã dậy thì thì còn cao được không?</summary><p>Còn, nếu sụn tăng trưởng chưa khép. Dược sĩ xem tuổi dậy thì, tốc độ cao năm qua và các mốc như vỡ giọng, có kinh để đánh giá cơ hội còn lại của con.</p></details>
+      <details><summary>Có phải mua sản phẩm mới được tư vấn không?</summary><p>Không. Tư vấn ban đầu và cẩm nang đều miễn phí. Sản phẩm chỉ được gợi ý khi thật sự cần cho con.</p></details>
+    </div>
+  </section>
+
+  <!-- ĐĂNG KÝ -->
+  <section class="dang-ky" id="dang-ky">
+    <div style="display:grid;gap:14px">
+      <p class="moc">Đăng ký tư vấn</p>
+      <h2>Nhận đánh giá chiều cao <em>miễn phí</em> cho con</h2>
+      <p>Để lại thông tin, Dược sĩ sẽ gọi hoặc nhắn Zalo cho ba mẹ trong ngày làm việc, kèm cẩm nang tăng chiều cao 1–18 tuổi.</p>
+    </div>
+    <form action="#" onsubmit="return false">
+      <label for="ten">Họ tên phụ huynh<input id="ten" name="ten" autocomplete="name" placeholder="Nguyễn Thị Lan"></label>
+      <label for="sdt">Số điện thoại / Zalo<input id="sdt" name="sdt" type="tel" autocomplete="tel" placeholder="09xx xxx xxx"></label>
+      <div class="hai">
+        <label for="gt">Giới tính của con<select id="gt" name="gt"><option>Bé trai</option><option>Bé gái</option></select></label>
+        <label for="tuoi">Năm sinh của con<input id="tuoi" name="tuoi" inputmode="numeric" placeholder="2014"></label>
+      </div>
+      <div class="hai">
+        <label for="cao">Chiều cao (cm)<input id="cao" name="cao" inputmode="decimal" placeholder="145"></label>
+        <label for="can">Cân nặng (kg)<input id="can" name="can" inputmode="decimal" placeholder="38"></label>
+      </div>
+      <button class="nut nut-do" type="submit">Gửi đăng ký</button>
+      <small>Thông tin chỉ dùng để tư vấn cho con, không chia sẻ cho bên khác.</small>
+    </form>
+  </section>
+</main>
+
+<footer id="lien-he">
+  <div class="khung">
+    <div class="ft-luoi">
+      <div>
+        <div class="thuong-hieu" style="margin-bottom:14px"><img src="anh/logo.jpg" alt=""><div><b>Công ty CP Cao Lên Việt Nam</b><span>Cao lên Việt Nam ơi!</span></div></div>
+        <ul>
+          <li>Địa chỉ: <span class="nhan-cho">Chờ bổ sung</span></li>
+          <li>Hotline: <a href="tel:0866767313">0866 767 313</a></li>
+          <li>Email: <span class="nhan-cho">Chờ bổ sung</span></li>
+          <li>Mã số doanh nghiệp: <span class="nhan-cho">Chờ bổ sung</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Khám phá</h3>
+        <ul>
+          <li><a href="#gioi-thieu">Giới thiệu</a></li>
+          <li><a href="#cau-chuyen">Câu chuyện – Nhân vật – Trải nghiệm</a></li>
+          <li><a href="#dich-vu">Dịch vụ</a></li>
+          <li><a href="#giai-phap">Giải pháp</a></li>
+          <li><a href="#san-pham">Sản phẩm</a></li>
+          <li><a href="#tin-tuc">Tin tức – Sự kiện</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kết nối</h3>
+        <ul>
+          <li><a href="https://zalo.me/0866767313">Zalo Dược sĩ</a></li>
+          <li>Fanpage Dược sĩ Thắng <span class="nhan-cho">Link</span></li>
+          <li>Fanpage Cao lên Việt Nam ơi <span class="nhan-cho">Link</span></li>
+          <li>Kênh YouTube / TikTok <span class="nhan-cho">Link</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="ban-quyen">© 2026 Công ty CP Cao Lên Việt Nam. Nội dung trên website mang tính tham khảo, không thay thế chẩn đoán của bác sĩ.</p>
+  </div>
+</footer>
+
+<div class="noi-lh">
+  <a class="zl" href="https://zalo.me/0866767313" aria-label="Chat Zalo">Zalo</a>
+  <a class="gl" href="tel:0866767313" aria-label="Gọi hotline">Gọi</a>
+</div>
+
+</body>
+</html>
